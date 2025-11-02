@@ -1,0 +1,72 @@
+<html>
+<html> <!-- HTML文件起始 -->
+    <head>
+        <title>表格</title> <!-- 瀏覽器分頁標題 -->
+    </head>
+
+    <body> <!-- 主內容區塊 -->
+
+        <!-- 2x3 基本表格 -->
+        <table border="1">
+            <tr> <!-- 表格列 -->
+                <td>1</td> <!-- 表格格子 -->
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <br> <!-- 換行，用於分隔表格 -->
+
+        <!-- 使用 colspan 合併欄位 -->
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="2">5 6</td> <!-- colspan=2 表示合併兩個欄位 -->
+            </tr>
+        </table> 
+
+        <br>
+
+        <!-- 使用 rowspan 合併列 -->
+        <table border="1">
+            <tr>
+                <td rowspan="2">1 4</td> <!-- rowspan=2 表示合併兩列 -->
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>  
+
+        <br>
+
+        <!-- 3x3 複合表格，使用 colspan 與 rowspan -->
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td colspan="2" rowspan="2">2 3 5 6</td> <!-- 同時合併兩列與兩欄 -->
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- 宣告HTML5文件類型 -->
+
+<html lang="en"> <!-- HTML文件起始，語言設定為英文 -->
+    <head>
+        <meta charset="utf-8" /> <!-- 設定文字編碼為UTF-8 -->
+        <title>文字轉換與樣式範例</title> <!-- 瀏覽器分頁標題 -->
+
+        <!-- 內嵌CSS樣式 -->
+        <style>
+            h1 {
+                color: #1a7aef;                 /* 文字顏色為藍色 */
+                background-color: #ff6a00;      /* 背景顏色為橘色 */
+                box-shadow: 2px 2px 3px red;    /* 文字陰影效果 */
+                text-transform: uppercase       /* 文字全部轉為大寫 */
+            }
+            h2 {
+                text-transform: lowercase       /* 文字全部轉為小寫 */
+            }
+            h3 {
+                text-transform: capitalize      /* 每個單字首字母大寫 */
+            }
+        </style>
+    </head>
+
+    <body> <!-- 主內容區塊 -->
+        <h1>This is some text in a paragraph.</h1> <!-- 文字全大寫，藍色文字橘色背景，附陰影 -->
+        <h2>This is some text in a paragraph.</h2> <!-- 文字全小寫 -->
+        <h3>This is some text in a paragraph.</h3> <!-- 每個單字首字母大寫 -->
+    </body>
+</html> <!-- HTML文件結尾 -->
