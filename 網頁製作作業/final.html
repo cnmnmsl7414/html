@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.quick-link {
+    text-align: center;
+    margin: 20px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: 0; }
+    36% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+    69% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.feature {
+    flex: 1;
+    background: #ecf0f1;
+    padding: 20px;
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header id="top">
+    <h1>我的網站</h1>
+    <p>HTML & CSS 作業</p>
+</header>
+
+<div class="quick-link">
+    <label>快速前往：</label>
+    <select onchange="location = this.value;">
+        <option value="#top">頁首</option>
+        <option value="#carousel">圖片輪播</option>
+        <option value="#info">相關資訊</option>
+        <option value="#features">學號班級姓名</option>
+        <option value="#footer">頁尾</option>
+    </select>
+</div>
+
+<section id="carousel">
+    <h2>圖片輪播</h2>
+    <div class="carousel">
+        <div class="slides">
+            <img src="https://picsum.photos/800/300?1" alt="">
+            <img src="https://picsum.photos/800/300?2" alt="">
+            <img src="https://picsum.photos/800/300?3" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="info">
+    <h2>相關資訊</h2>
+    <p>
+        這是一個使用 HTML 與 CSS 製作的作業
+    </p>
+</section>
+
+<section id="features">
+    <h2>學號班級姓名</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>B13090036</h3>            
+        </div>
+        <div class="feature">
+            <h3>四資二甲</h3>            
+        </div>
+        <div class="feature">
+            <h3>何槃桁</h3>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <p>作業的頁尾</p>
+</footer>
+
+</body>
+</html>
